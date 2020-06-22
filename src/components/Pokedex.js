@@ -20,6 +20,7 @@ class Pokedex extends Component {
         <div className="Pokedex-card">
           {this.props.pokemon.map((p) => (
             <Pokecard
+              key={p.id}
               id={p.id}
               name={p.name}
               type={p.type}
